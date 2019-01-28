@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<!-- 父组件页面 -->
+<view class="container">
+
+  <!-- 引用子组件 -->
+  <dialog id='dialog' 
+  title='{{dialogData.title}}' 
+  content='{{dialogData.content}}' 
+  cancelText='{{dialogData.cancelText}}' 
+  confirmText='{{dialogData.confirmText}}' 
+  isShowCancelBtn='{{dialogData.isShowCancelBtn}}'
+  bind:cancelEvent="{{dialogData.cancelEvent}}" 
+  bind:confirmEvent="{{dialogData.confirmEvent}}">
+  </dialog>
+  <!-- 以上内容备注：11/12行代码：当子组件触发某个事件时,给其添加绑定事件回调给父组件也触发事件相应的事件处理，抒写规范：bindmyevent="onMyEvent"或bind:myevent="onMyEvent"的形式。-->
+
+  <button type="primary" bindtap="showDialog"> ClickMe! </button>
+</view>
