@@ -3,11 +3,17 @@
 主要是敲一遍代码学习之后才体会到原理是这样子的嘛，光看文档是看得懂，跟自己做出来真的是两码事。
 ## （一）效果展示
 1.默认效果：
+
 ![图1](/img/1.gif)
+
 事件触发流程说明：**console中显示**
+
 ![事件触发说明](/img/01.gif)
+
 2.去掉“取消”按钮效果：
+
 ![图2](/img/2.gif)
+
 ## （二）实现流程
 #### 创建子组件页面：
 1、新建一个页面如：components文件夹下的Dailog文件夹下的dialog，注意：该页面不需要app.json的（声明的话会报：`无效的 pageJSON(components/Dialog/dialog)["component"]`），`dialog.json`记得设置：`"component": true,        // 自定义组件声明`
@@ -383,7 +389,9 @@ Page({
 })
 ```
 ## （三）实现原理
-![实现原理](https://img-blog.csdnimg.cn/20190124122415169.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MzI0NDUz,size_16,color_FFFFFF,t_70)
+
+![实现原理](/img/03.png)
+
 ## （四）参考文献
 - [手把手教你实现微信小程序中的自定义组件](https://www.jianshu.com/p/8a2a730d9e60)
 - [微信小程序之自定义模态弹窗（带动画）实例](https://www.cnblogs.com/demodashi/p/9590171.html)
